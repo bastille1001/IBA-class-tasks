@@ -1,27 +1,29 @@
 
 public class task6 {
     public static void main(String[] args) {
-        int range = 'Z' - 'A' + 1;
-        String str = "";
-        final int LEN = 30;
-        for (int i = 0; i < LEN; i++) {
-            boolean way = (int)((Math.random()*range))%2==0;
-            char c = (char)(Math.random()*range + (way ? 'A':'a'));
-            str += c;
+        final String VOWCAP = "AEOIU";
+        int range = 'Z'-'A' + 1;
+        StringBuilder rand_s = new StringBuilder();
+        for (int i = 0; i < 30; i++) {
+            boolean way =(int)(Math.random()*range)%2==0;
+            char letter = (char) (Math.random() * range + (way? 'A' : 'a'));
+            rand_s.append(letter);
         }
-        System.out.println(str);
-        int charCount = 0;
-        String vowels = "aeiou";
-        int counVow = 0;
-        for (char charBox : str.toLowerCase().toCharArray()) {
-            if (Character.isLetter(charBox)){
-                charCount++;
-                if (vowels.indexOf(charBox) != -1) {
-                    counVow++;
-                }
-            }
+        String random = rand_s.toString();
+        StringBuilder vowels = new StringBuilder();
+        StringBuilder consonants = new StringBuilder();
+        for (int i = 0; i < random.length(); i++) {
+            char c = random.charAt(i);
+            if(VOWCAP.contains(String.valueOf(c)))
+                vowels.append(c);
+            else
+                consonants.append(c);
         }
-        System.out.printf("Гласных = %d;%nСогласных = %d", counVow, charCount - counVow);
-    }
 
+        System.out.println(random);
+        System.out.println(vowels.toString());
+        System.out.println(consonants.toString());
+        System.out.println(vowels.toString().toLowerCase());
+        System.out.println(consonants.toString().toLowerCase());
+    }
 }
