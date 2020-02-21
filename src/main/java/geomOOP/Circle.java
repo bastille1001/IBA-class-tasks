@@ -21,6 +21,7 @@ public class Circle extends Figure {
 
     @Override
     public String toString() {
-        return String.format("area for circle %d", area());
+        return String.format("Circle{center=%s, radius=%d}", center, radius);
     }
+
 }

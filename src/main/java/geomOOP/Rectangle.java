@@ -16,8 +16,9 @@ public class Rectangle extends Figure {
     public int area(){
         return Math.abs(point1.x - point2.x)*(point1.y - point2.y);
     }
+
     @Override
     public String toString() {
-        return String.format("area for rectangle %d", area());
+        return String.format("Rectangle{point1=%s, point2=%s}", point1, point2);
     }
 }

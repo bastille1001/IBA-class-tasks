@@ -13,4 +13,9 @@ public class Point {
     public static Point rand() {
         return new Point(Fn.rand(), Fn.rand());
     }
+
+    @Override
+    public String toString() {
+        return String.format("Point{x=%d, y=%d}", x, y);
+    }
 }

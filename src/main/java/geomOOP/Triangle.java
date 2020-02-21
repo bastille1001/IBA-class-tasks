@@ -26,8 +26,9 @@ public class Triangle extends Figure{
         double hp =(side1 + side2 + side3)/2;
         return (int)(Math.sqrt(hp*(hp-side1)*(hp-side2)*(hp-side3)));
     }
+
     @Override
     public String toString() {
-        return String.format("area for triangle %d", area());
+        return String.format("Triangle{p1=%s, p2=%s, p3=%s}", p1, p2, p3);
     }
 }
