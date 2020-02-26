@@ -1,3 +1,5 @@
+package Tasks;
+
 import java.util.Arrays;
 
 public class task4 {

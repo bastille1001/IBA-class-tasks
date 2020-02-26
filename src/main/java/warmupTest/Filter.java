@@ -11,9 +11,4 @@ public class Filter {
         }
         return origin.replaceAll("-","").toLowerCase();
     }
-
-    public static void main(String[] args) {
-        Filter fl = new Filter();
-        System.out.println(fl.filter("qWeRuiopl")) ;
-    }
 }

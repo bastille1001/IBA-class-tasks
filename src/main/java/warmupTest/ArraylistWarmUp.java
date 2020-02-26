@@ -2,14 +2,16 @@ package warmupTest;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
+import java.util.Set;
 
 public class ArraylistWarmUp {
-    public List<Integer> joined(List<Integer> a1, List<Integer> a2){
-        List<Integer> a3 = new ArrayList<Integer>();
-        a3.addAll(a1);
-        a3.addAll(a2);
+    public ArrayList<Integer> joined(ArrayList<Integer> a1, ArrayList<Integer> a2){
+        ArrayList<Integer> alreadyMixed = new ArrayList<>();
+        alreadyMixed.addAll(a1);
+        alreadyMixed.addAll(a2);
 
-        return (List<Integer>) a3;
+        Set<Integer> result = null;
+        result.addAll(alreadyMixed);
+        return (ArrayList<Integer>) result;
     }
 }

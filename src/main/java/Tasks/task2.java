@@ -1,3 +1,5 @@
+package Tasks;
+
 import java.util.Arrays;
 
 import static java.util.Arrays.*;
@@ -10,7 +12,7 @@ public class task2 {
         arr = new int[30];
 
         int[] arr1;
-        arr1 = new int[30];;
+        arr1 = new int[30];
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 40 - 20);

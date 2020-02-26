@@ -3,6 +3,7 @@ package geomOOP;
 import java.util.ArrayList;
 
 public class Figures {
+
     public static Figure rand_figure() {
         switch ((int)(Math.random()*3)) {
             case 0: return Circle.rand();
@@ -11,6 +12,7 @@ public class Figures {
             default: throw new IllegalArgumentException("java random is broken :(");
         }
     }
+
     public static void main(String[] args) {
 
         Triangle tr = new Triangle(new Point(6,1),new Point(2,3),new Point(4,5));
@@ -32,7 +34,6 @@ public class Figures {
             total += f.area();
         }
         System.out.printf("The total area is %d", total);
-
 
     }
 }

@@ -1,4 +1,4 @@
-import java.io.InputStream;
+package Tasks;// import java.io.InputStream;
 import java.io.PrintStream;
 import java.util.Scanner;
 
@@ -7,15 +7,14 @@ public class task1 {
         PrintStream output = System.out;
         output.println("Enter the first number: ");
 
-        InputStream in = System.in;
-        Scanner scanner = new Scanner(in);
+        //InputStream in = System.in;
+        Scanner in = new Scanner(System.in);
 
-        int number1 = scanner.nextInt();
+        int number1 = in.nextInt();
 
         output.println("Enter the second number: ");
 
-        int number2 = scanner.nextInt();
-
+        int number2 = in.nextInt();
 
         output.printf("The result is: %d\n",number1+number2);
     }

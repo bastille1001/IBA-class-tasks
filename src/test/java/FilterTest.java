@@ -17,7 +17,7 @@ public class FilterTest {
         String origin = "Hello";
         String expected = "Hll";
         String actual = task.filter(origin);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -25,6 +25,6 @@ public class FilterTest {
         String origin = "qWertyLomNiu";
         String expected = "qwrtylmn";
         String actual = task.filter(origin);
-        assertEquals(actual,expected);
+        assertEquals(expected,actual);
     }
 }
