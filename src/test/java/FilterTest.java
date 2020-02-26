@@ -19,4 +19,12 @@ public class FilterTest {
         String actual = task.filter(origin);
         assertEquals(actual, expected);
     }
+
+    @Test
+    void filter2() {
+        String origin = "qWertyLomNiu";
+        String expected = "qwrtylmn";
+        String actual = task.filter(origin);
+        assertEquals(actual,expected);
+    }
 }

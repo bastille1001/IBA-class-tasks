@@ -6,14 +6,14 @@ public class Filter {
         for (int i = 0; i < origin.length(); i++) {
             if (vowels.contains(String.valueOf(origin.charAt(i)).toLowerCase())){
                 String remove = String.valueOf(origin.charAt(i));
-                origin = String.valueOf(origin.replaceAll(remove,"-"));
+                origin = String.valueOf(origin.replaceAll(remove,"-").toLowerCase());
             }
         }
-        return origin.replaceAll("-","");
+        return origin.replaceAll("-","").toLowerCase();
     }
 
     public static void main(String[] args) {
         Filter fl = new Filter();
-        System.out.println(fl.filter("qweruiopl")) ;
+        System.out.println(fl.filter("qWeRuiopl")) ;
     }
 }
