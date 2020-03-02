@@ -11,7 +11,6 @@ public class Task10Split {
         List<String> objects =  Arrays.asList("the book","the ball","the bed");
 
         List<SentenceTask10> sentences = new ArrayList<>();
-
         for (String subj: subjects) {
             for (String verb: verbs) {
                 for (String object: objects) {
