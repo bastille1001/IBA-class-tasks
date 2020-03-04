@@ -11,6 +11,7 @@ public class WriteRead {
     public static int rand() {
         return (int) (Math.random() * 60 - 30);
     }
+
     public static List<Integer> generate(){
         List<Integer> randoms = IntStream.range(0,100)
                 .map(x-> rand())
