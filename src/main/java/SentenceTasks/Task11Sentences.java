@@ -1,4 +1,4 @@
-package Tasks;
+package SentenceTasks;
 
 import java.io.*;
 import java.util.*;
@@ -57,6 +57,5 @@ public class Task11Sentences {
         Map<String, List<String>> convert2 = convertLS(subj_obj);
         List<String> sentence = process(convert1,convert2);
         write(sentence,"file6.txt");
-
     }
 }

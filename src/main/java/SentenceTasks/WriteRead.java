@@ -1,4 +1,4 @@
-package Tasks;
+package SentenceTasks;
 
 import java.io.*;
 import java.util.ArrayList;
