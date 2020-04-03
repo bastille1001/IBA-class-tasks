@@ -1,18 +1,13 @@
 package Tasks;
 
-import java.util.Arrays;
-
-import static java.util.Arrays.*;
 
 public class task2 {
     public static void main(String[] args) {
         int sum = 0;
         int sum1 = 0;
-        int[] arr;
-        arr = new int[30];
 
-        int[] arr1;
-        arr1 = new int[30];
+        int[] arr = new int[30];
+        int[] arr1 = new int[30];
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 40 - 20);

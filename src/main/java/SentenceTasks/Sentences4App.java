@@ -7,21 +7,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
 
 public class Sentences4App {
   public static void main(String[] args) throws IOException {
-    // read 1st
     List<String> f1 = read("subj_verb_.txt");
-    // read second
     List<String> f2 = read("verb_obj_.txt");
-    // convert 1st to map
     Map<String, List<String>> sv = convert(f1);
-    // convert 2nd to map
     Map<String, List<String>> vo = convert(f2);
-    // combine sentences
     List<Sentence> sentences = combine(sv, vo);
-    // write to file
     write("combined.txt", sentences);
   }
 
@@ -39,15 +33,10 @@ public class Sentences4App {
     HashMap<String, List<String>> data = new HashMap<>();
     for (String line: list) {
       String[] splitted = line.split(":");
-      // Noel : wrote, chased, slept on
-      // splitted[0] = `Noel `
-      // splitted[1] = ` wrote, chased, slept on`
       String[] splited2 = splitted[1].split(",");
-      // [0] = ` wrote` [1] = ` chased` [2] = ` slept on`
       data.put(
           splitted[0].trim(),
-          Arrays.stream(splited2).map(s -> s.trim()).collect(Collectors.toList())
-          // [0] = `wrote` [1] = `chased` [2] = `slept on`
+          Arrays.stream(splited2).map(String::trim).collect(Collectors.toList())
       );
     }
     return data;

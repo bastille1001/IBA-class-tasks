@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class task5 {
     public static void main(String[] args) {
         int LEN = 10;
-        int index = 0;
 
         int[] ar1 = new int[LEN];
         int[] ar2 = new int[LEN];
@@ -24,9 +23,9 @@ public class task5 {
         }
 
         for (int i = 0; i < tmp.length; i++) {
-            tmp[index+i] = ar1[i];
-            tmp[index+1+i] = ar2[i];
-            tmp[index+2+i] = ar3[i];
+            tmp[i] = ar1[i];
+            tmp[1+i] = ar2[i];
+            tmp[2+i] = ar3[i];
         }
 
         System.out.println(Arrays.toString(ar1));
