@@ -25,7 +25,7 @@ public class MinSumApp {
 
         Pair pair = IntStream.range(0, data.size() - 1)
                 .mapToObj(idx -> new Pair(idx, data.get(idx) + data.get(idx + 1)))
-                .min((p1, p2) -> p1.sum - p2.sum)
+                .min(Comparator.comparingInt(p -> p.sum))
                 .orElseThrow(() -> new RuntimeException("Shouldn`t be empty"));
 
         System.out.printf("data : %s\n", data);
