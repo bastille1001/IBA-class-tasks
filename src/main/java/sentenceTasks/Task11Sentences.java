@@ -1,4 +1,4 @@
-package SentenceTasks;
+package sentenceTasks;
 
 import java.io.*;
 import java.util.*;

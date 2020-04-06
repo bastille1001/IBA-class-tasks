@@ -1,10 +1,10 @@
-package Tasks;
+package tasks;
 
 import java.util.Arrays;
 import java.util.Random;
 
 
-public class task4 {
+public class Task4 {
     public static void main(String[] args) {
         final int LEN = 30;
 

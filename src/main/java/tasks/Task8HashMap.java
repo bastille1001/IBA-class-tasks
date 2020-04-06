@@ -1,11 +1,11 @@
-package Tasks;
+package tasks;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
 
-public class task8HashMap {
+public class Task8HashMap {
     public static void main(String[] args) {
         String str = "Hello World";
         int len = str.length();

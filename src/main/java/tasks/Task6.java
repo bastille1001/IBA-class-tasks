@@ -1,6 +1,6 @@
-package Tasks;
+package tasks;
 
-public class task6 {
+public class Task6 {
     public static void main(String[] args) {
         int range = 'Z'-'A' + 1;
         int start = 'A';

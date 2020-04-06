@@ -1,8 +1,8 @@
-package Tasks;// import java.io.InputStream;
+package tasks;// import java.io.InputStream;
 import java.io.PrintStream;
 import java.util.Scanner;
 
-public class task1 {
+public class Task1 {
     public static void main(String[] args) {
         PrintStream output = System.out;
         output.println("Enter the first number: ");

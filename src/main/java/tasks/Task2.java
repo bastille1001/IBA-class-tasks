@@ -1,7 +1,7 @@
-package Tasks;
+package tasks;
 
 
-public class task2 {
+public class Task2 {
     public static void main(String[] args) {
         int sum = 0;
         int sum1 = 0;

@@ -1,6 +1,6 @@
-package Tasks;
+package tasks;
 
-public class task7Alphabet {
+public class Task7Alphabet {
     public static void main(String[] args) {
         byte[] data = new byte['Z' - 'A' + 1];
         for (byte b = 'A'; b <= 'Z'; b++) {

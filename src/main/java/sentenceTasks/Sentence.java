@@ -1,4 +1,4 @@
-package SentenceTasks;
+package sentenceTasks;
 
 public class Sentence {
   public final String subj;
