@@ -14,9 +14,8 @@ public class MergeSort {
 
     private static int[] merge(int[] data1, int[] data2) {
         int[] data3 = new int[data1.length + data2.length];
-        int idx_1 = 0;
-        int idx_2 = 0;
-        int idx_3 = 0;
+        int idx_1 = 0, idx_2 = 0, idx_3 = 0;
+
         while (idx_1 < data1.length && idx_2 < data2.length){
             if (data1[idx_1] < data2[idx_2]){
                 data3[idx_3++] = data1[idx_1++];
@@ -28,6 +27,7 @@ public class MergeSort {
         while (idx_1 < data1.length){
             data3[idx_3++] = data1[idx_1++];
         }
+
         while (idx_2 < data2.length){
             data3[idx_3++] = data2[idx_2++];
         }
