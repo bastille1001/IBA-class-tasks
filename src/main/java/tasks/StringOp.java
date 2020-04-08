@@ -7,6 +7,7 @@ public class StringOp {
         if (delta == 0) return orig;
         int middle = delta > 0 ? len - delta : -delta;
         return orig.substring(middle).concat(orig.substring(0,middle));
+
     }
 
     public static void main(String[] args) {
