@@ -1,9 +1,9 @@
-package tasks;
+package hackerRank;
 
 
 import java.util.Scanner;
 
-public class HackerRankApp {
+public class FaktorialApp {
     public static void main(String[] args) {
         int a, n, p;
         Scanner scanner = new Scanner(System.in);

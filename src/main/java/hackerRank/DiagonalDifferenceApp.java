@@ -1,11 +1,11 @@
-package tasks;
+package hackerRank;
 
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class HackerRankDiagonalDifference {
+public class DiagonalDifferenceApp {
 
     static class Pair{
         final int a;
