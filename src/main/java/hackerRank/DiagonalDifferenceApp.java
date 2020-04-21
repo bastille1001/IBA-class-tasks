@@ -17,14 +17,6 @@ public class DiagonalDifferenceApp {
         }
     }
 
-    public static int diagonalDifference1(List<List<Integer>> data){
-        int len = data.size();
-        return Math.abs(IntStream.range(0, len).map(i ->
-                data.get(i).get(i) - data.get(i).get(len - 1 - i)
-        )
-                .sum());
-    }
-
     public static int diagonalDifference(List<List<Integer>> data){
         int len = data.size();
         return IntStream.range(0, len).mapToObj(i -> new Pair(
@@ -36,6 +28,15 @@ public class DiagonalDifferenceApp {
                 .map(Math::abs)
                 .orElseThrow(RuntimeException::new);
     }
+
+    public static int diagonalDifference1(List<List<Integer>> data){
+        int len = data.size();
+        return Math.abs(IntStream.range(0, len).map(i ->
+                data.get(i).get(i) - data.get(i).get(len - 1 - i)
+        )
+                .sum());
+    }
+
 
     public static void main(String[] args) {
         List<List<Integer>> data = Arrays.asList(
