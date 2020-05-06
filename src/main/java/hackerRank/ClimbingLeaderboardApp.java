@@ -7,6 +7,7 @@ public class ClimbingLeaderboardApp {
 
     static int calc_score(Integer[] scores, int a){
         //we need to add binary search method here
+        //for the time complexity
         int idx = Arrays.binarySearch(scores, a, Comparator.comparingInt(i2 -> i2));
         if (idx < 0) return Math.abs(idx);
         return idx + 1;
